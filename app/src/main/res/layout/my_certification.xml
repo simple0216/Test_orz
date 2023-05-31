@@ -55,6 +55,7 @@
                 android:paddingTop="14dp"
                 android:paddingBottom="14dp"
                 android:text="我的认证"
+                android:letterSpacing="0.1"
                 android:textColor="#333333"
                 android:textSize="16sp"
                 tools:ignore="MissingConstraints" />

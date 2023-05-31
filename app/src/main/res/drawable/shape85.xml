@@ -16,6 +16,6 @@
         android:centerY="0.1"
         />
     <stroke
-        android:width="2dp"
-        android:color="#C4C3FF" />
+        android:width="1dp"
+        android:color="#CBCBCB" />
 </shape>

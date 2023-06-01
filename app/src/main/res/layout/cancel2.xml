@@ -52,14 +52,15 @@
                 android:id="@+id/textView333"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingEnd="45dp"
-                android:paddingTop="14dp"
                 android:layout_marginStart="16dp"
-                android:paddingBottom="14dp"
                 android:letterSpacing="0.1"
-                android:text="手机认证"
+                android:paddingTop="14dp"
+                android:paddingEnd="45dp"
+                android:paddingBottom="14dp"
+                android:text="注销账号"
                 android:textColor="#333333"
                 android:textSize="16sp"
+                android:textStyle="bold"
                 tools:ignore="MissingConstraints" />
 
         </LinearLayout>
@@ -71,108 +72,82 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
+
+        <TextView
+            android:id="@+id/textView138"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:letterSpacing="0.1"
+            android:text="注销账号后，你的账号将：" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="29dp">
 
 
             <TextView
-                android:id="@+id/textView135"
+                android:id="@+id/textView139"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:letterSpacing="0.1"
+                android:text="1.账号相关信息将被移除，你的好友无法再与你取得联系（包括好友，关注，粉丝，家族等）；"/>
+
+            <TextView
+                android:id="@+id/textView140"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:layout_marginStart="16dp"
-                android:letterSpacing="0.1"
-                android:textSize="12sp"
+                android:layout_weight="1"
+                android:textSize="14sp"
                 android:textColor="#666666"
-                android:text="认证真实学历提高个人的魅力" />
+                android:letterSpacing="0.1"
+                android:text=" 2.账户剩余金币、积分、魅力值、星光值、土豪值、戒指、座驾、贵族等收益相关数据在注销成功后将清空，如产生利益损失，由账号注销发起者承担;"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textView141"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
+                android:layout_weight="1"
+                android:layout_marginTop="24dp"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:letterSpacing="0.1"
+                android:text="3.绑定的手机号/微信/QQ/微博将会被解绑，但需等待30个自然日才能再次进行注册；若同一个注册信息注销超过2次，则永久不允许注册;"/>
 
-
-                <TextView
-                    android:id="@+id/textView136"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:textSize="14sp"
-                    android:textColor="#333333"
-                    android:letterSpacing="0.1"
-                    android:text="毕业院校" />
-
-                <EditText
-                    android:id="@+id/school1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="32dp"
-                    android:textColor="#999999"
-                    android:ems="10"
-                    android:textSize="12sp"
-                    android:letterSpacing="0.1"
-                    android:background="@null"
-                    android:inputType="textPersonName"
-                    android:text="请填写真实的毕业院校" />
-
-                <ImageView
-                    android:id="@+id/imageView71"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="16dp"
-                    app:srcCompat="@drawable/group301" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textView142"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
+                android:layout_weight="1"
+                android:layout_marginTop="24dp"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:letterSpacing="0.1"
+                android:text="4.你的实名信息会解绑，解绑后可以再次绑定其他爱聊号，（如你是主播用户，你的实名信息可以再次认证开播）;"/>
 
-                <TextView
-                    android:id="@+id/textView137"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:textSize="14sp"
-                    android:textColor="#333333"
-                    android:letterSpacing="0.1"
-                    android:text="学历" />
+            <TextView
+                android:id="@+id/textView143"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="24dp"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:letterSpacing="0.1"
+                android:text="5.账号将会被系统收回，并对平台其他用户开放申请;"/>
 
-                <EditText
-                    android:id="@+id/school2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="32dp"
-                    android:textColor="#999999"
-                    android:ems="10"
-                    android:textSize="12sp"
-                    android:letterSpacing="0.1"
-                    android:background="@null"
-                    android:inputType="textPersonName"
-                    android:text="请选择您的学历" />
-
-                <ImageView
-                    android:id="@+id/imageView72"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="16dp"
-                    app:srcCompat="@drawable/group301" />
-
-            </LinearLayout>
         </LinearLayout>
-
 
         <android.widget.Button
             android:id="@+id/btn2"
@@ -182,8 +157,7 @@
             android:layout_marginStart="88dp"
             android:layout_marginEnd="87dp"
             android:background="@drawable/next"
-            android:text="马上认证"
-            android:letterSpacing="0.1"
+            android:text="我同意"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             app:layout_constraintTop_toTopOf="parent"

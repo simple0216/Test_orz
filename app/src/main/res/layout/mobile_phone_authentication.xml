@@ -168,6 +168,7 @@
                 android:layout_marginEnd="87dp"
                 android:background="@drawable/next"
                 android:text="马上认证"
+                android:letterSpacing="0.1"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 app:layout_constraintTop_toTopOf="parent"

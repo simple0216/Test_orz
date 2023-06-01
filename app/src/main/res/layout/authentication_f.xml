@@ -57,7 +57,7 @@
                 android:layout_marginStart="16dp"
                 android:paddingBottom="14dp"
                 android:letterSpacing="0.1"
-                android:text="手机认证"
+                android:text="真人认证"
                 android:textColor="#333333"
                 android:textSize="16sp"
                 tools:ignore="MissingConstraints" />
@@ -69,126 +69,70 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:background="#FFFFFF"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="128dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_1"
             android:orientation="vertical">
 
 
             <TextView
-                android:id="@+id/textView135"
+                android:id="@+id/textView156"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginStart="16dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="33dp"
+                android:textSize="16sp"
+                android:textColor="#1B69B1"
                 android:letterSpacing="0.1"
-                android:textSize="12sp"
-                android:textColor="#666666"
-                android:text="认证真实学历提高个人的魅力" />
+                android:text="未完成手机认证" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textView157"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
-
-
-                <TextView
-                    android:id="@+id/textView136"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:textSize="14sp"
-                    android:textColor="#333333"
-                    android:letterSpacing="0.1"
-                    android:text="毕业院校" />
-
-                <EditText
-                    android:id="@+id/school1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="32dp"
-                    android:textColor="#999999"
-                    android:ems="10"
-                    android:textSize="12sp"
-                    android:letterSpacing="0.1"
-                    android:background="@null"
-                    android:inputType="textPersonName"
-                    android:text="请填写真实的毕业院校" />
-
-                <ImageView
-                    android:id="@+id/imageView71"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="16dp"
-                    app:srcCompat="@drawable/group301" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
-
-                <TextView
-                    android:id="@+id/textView137"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:textSize="14sp"
-                    android:textColor="#333333"
-                    android:letterSpacing="0.1"
-                    android:text="学历" />
-
-                <EditText
-                    android:id="@+id/school2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="32dp"
-                    android:textColor="#999999"
-                    android:ems="10"
-                    android:textSize="12sp"
-                    android:letterSpacing="0.1"
-                    android:background="@null"
-                    android:inputType="textPersonName"
-                    android:text="请选择您的学历" />
-
-                <ImageView
-                    android:id="@+id/imageView72"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="16dp"
-                    app:srcCompat="@drawable/group301" />
-
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="32dp"
+                android:textSize="14sp"
+                android:letterSpacing="0.1"
+                android:textColor="#333333"
+                android:text="需完成手机认证后才可进行真人认证" />
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/textView159"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:textSize="10sp"
+            android:textColor="#666666"
+            android:letterSpacing="0.1"
+            android:text="真人认证正在审核审核通过后才可进行实名认证" />
 
         <android.widget.Button
             android:id="@+id/btn2"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="70dp"
             android:layout_marginStart="88dp"
+            android:layout_marginTop="70dp"
             android:layout_marginEnd="87dp"
             android:background="@drawable/next"
-            android:text="马上认证"
+            android:text="去手机认证"
             android:letterSpacing="0.1"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="88dp" />
+
 
     </LinearLayout>
 

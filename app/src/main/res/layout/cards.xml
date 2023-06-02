@@ -33,6 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_gravity="center"
             android:orientation="horizontal"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints,UseCompoundDrawables">
@@ -54,10 +55,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_gravity="center"
+                android:gravity="center"
                 android:layout_marginEnd="44dp"
                 android:textStyle="bold"
-                android:letterSpacing="0.05"
-                android:text="实名认证"
+                android:letterSpacing="0.1"
+                android:text="绑定银行卡"
                 android:textColor="#333333"
                 android:textSize="16sp"
                 tools:ignore="MissingConstraints" />
@@ -76,59 +78,51 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/shape85"
+            android:background="@drawable/shape93"
             android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView160"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:textColor="#333333"
+                android:text="已绑定身份证" />
+
+            <TextView
+                android:id="@+id/textView180"
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="24dp"
+                android:background="#EFEFEF"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp">
 
-                <TextView
-                    android:id="@+id/textView128"
+
+                <ImageView
+                    android:id="@+id/imageView80"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="31dp"
-                    android:letterSpacing="0.1"
-                    android:text="真实姓名"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
+                    app:srcCompat="@drawable/group891" />
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/textView181"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/shape85">
-
-                    <EditText
-                        android:id="@+id/edt1"
-                        style="@style/EditTextStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="24dp"
-                        android:layout_marginTop="11dp"
-                        android:layout_marginBottom="11dp"
-                        android:layout_weight="1"
-                        android:drawableLeft="@drawable/rectangle232"
-                        android:ems="10"
-                        android:gravity="center"
-                        android:hint="请输入真实姓名"
-                        android:inputType="textPersonName"
-                        android:textColorHint="#CBCBCB"
-                        android:textSize="14sp" />
-
-                    <ImageView
-                        android:id="@+id/img3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="20dp"
-                        app:srcCompat="@drawable/group272" />
-                </LinearLayout>
-
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:text="添加储蓄卡" />
             </LinearLayout>
 
             <LinearLayout
@@ -136,25 +130,27 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/textView129"
+                    android:id="@+id/textView182"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="31dp"
+                    android:layout_marginTop="25dp"
                     android:letterSpacing="0.1"
-                    android:text="证件号码"
-                    android:textColor="#333333"
+                    android:text="银行卡号:"
+                    android:textColor="#999999"
                     android:textSize="14sp" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/shape85">
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#F4F4F4"
+                    >
 
                     <EditText
-                        android:id="@+id/edt2"
+                        android:id="@+id/edt4"
                         style="@style/EditTextStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -162,50 +158,42 @@
                         android:layout_marginTop="11dp"
                         android:layout_marginBottom="11dp"
                         android:layout_weight="1"
-                        android:drawableLeft="@drawable/rectangle232"
                         android:ems="10"
-                        android:gravity="center"
-                        android:hint="请输入真实姓名"
+                        android:hint="输入银行卡号码"
                         android:inputType="textPersonName"
-                        android:textColorHint="#CBCBCB"
+                        android:textColorHint="#CCCCCC"
                         android:textSize="14sp" />
 
-                    <ImageView
-                        android:id="@+id/img4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="20dp"
-                        app:srcCompat="@drawable/group272" />
                 </LinearLayout>
 
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView130"
+                android:id="@+id/textView183"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="19dp"
                 android:layout_marginBottom="24dp"
                 android:textSize="12sp"
+                android:textColor="#666666"
                 android:letterSpacing="0.1"
-                android:text="注：请确保是本人身份信息，以防实名失败，实名成功
-后，身份信息与此账号唯一绑定，不可更改" />
+                android:text="提现的银行卡号必须和实名认证的是同一个人，不填写真实资料会造成无法汇款，提现申请提交后秒到账！" />
 
 
         </LinearLayout>
 
+
         <android.widget.Button
-            android:id="@+id/btn2"
+            android:id="@+id/btn5"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginStart="88dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="200dp"
             android:layout_marginEnd="87dp"
             android:background="@drawable/next"
-            android:text="下一步"
+            android:text="立即绑定"
             android:letterSpacing="0.1"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
